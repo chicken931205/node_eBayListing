@@ -32,7 +32,7 @@ const findItemsAdvanced = () => {
         .then(async (response) => {
             const items = response.data.findItemsAdvancedResponse[0].searchResult[0].item;
             for (let i = 0;i < items.length;i++) {
-                // const item = items[i];
+                const item = items[i];
                 // const itemSpecifics = item.itemSpecifics ? item.itemSpecifics[0].nameValueList : [];
                 // const model = findItemSpecific(itemSpecifics, 'Model'); // Custom function to find model in item specifics
                 // const upc = findItemSpecific(itemSpecifics, 'UPC');
